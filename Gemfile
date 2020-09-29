@@ -43,4 +43,4 @@ group :development, :test do
 end
 
 group :development do
-  # Access an int
+  # Access an interactive console on exception pages or by calling 'console' any
