@@ -52,4 +52,4 @@ group :development do
 end
 
 
-# Windo
+# Windows does not include zoneinfo files, so bundle the tzinfo-data g
