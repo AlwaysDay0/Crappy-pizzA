@@ -5,4 +5,7 @@
 //= require_self
 //= require_tree ./channels
 
-(function(
+(function() {
+  this.App || (this.App = {});
+
+  App.cable = ActionCable.creat
