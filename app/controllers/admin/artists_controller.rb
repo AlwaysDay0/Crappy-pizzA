@@ -19,4 +19,6 @@ class Admin::ArtistsController < ApplicationController
   def create
     @artist = Artist.new(artists_params)
     if @artist.save
-      redirect_to admin_artist_path(@artist), notice:
+      redirect_to admin_artist_path(@artist), notice: 'artist was successfully created.'
+    else
+      render :new
