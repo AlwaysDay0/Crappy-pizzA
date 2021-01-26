@@ -1,3 +1,3 @@
 class Admin::ArtistsController < ApplicationController
   
-  bef
+  before_action :set_artist, only: [:show, :edit, :update, :destroy]
