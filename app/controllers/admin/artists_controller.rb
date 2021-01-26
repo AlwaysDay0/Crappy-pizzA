@@ -18,4 +18,5 @@ class Admin::ArtistsController < ApplicationController
 
   def create
     @artist = Artist.new(artists_params)
-    if @art
+    if @artist.save
+      redirect_to admin_artist_path(@artist), notice:
