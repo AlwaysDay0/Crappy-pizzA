@@ -15,3 +15,7 @@ class Admin::ArtistsController < ApplicationController
 
   def show
   end
+
+  def create
+    @artist = Artist.new(artists_params)
+    if @art
