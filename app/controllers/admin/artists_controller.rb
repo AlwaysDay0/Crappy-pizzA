@@ -1,1 +1,3 @@
-class 
+class Admin::ArtistsController < ApplicationController
+  
+  bef
