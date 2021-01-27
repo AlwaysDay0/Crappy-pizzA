@@ -22,3 +22,8 @@ class Admin::ArtistsController < ApplicationController
       redirect_to admin_artist_path(@artist), notice: 'artist was successfully created.'
     else
       render :new
+    end
+  end
+
+  def update
+    if @artist.update(artists_params)
