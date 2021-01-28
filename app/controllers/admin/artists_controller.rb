@@ -27,3 +27,4 @@ class Admin::ArtistsController < ApplicationController
 
   def update
     if @artist.update(artists_params)
+      redirect_to admin_artist_path(@artist), notice: 'artist was successfu
