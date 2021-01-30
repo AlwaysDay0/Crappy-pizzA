@@ -32,3 +32,8 @@ class Admin::ArtistsController < ApplicationController
       render :edit
     end
   end
+
+ 
+  def destroy
+    @artist.destroy
+    redirect_to admin_artists_path, noti
