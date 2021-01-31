@@ -36,4 +36,7 @@ class Admin::ArtistsController < ApplicationController
  
   def destroy
     @artist.destroy
-    redirect_to admin_artists_path, noti
+    redirect_to admin_artists_path, notice: 'artist was successfully destroyed.'
+  end
+
+  priva
