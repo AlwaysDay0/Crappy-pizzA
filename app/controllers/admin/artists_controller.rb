@@ -39,4 +39,6 @@ class Admin::ArtistsController < ApplicationController
     redirect_to admin_artists_path, notice: 'artist was successfully destroyed.'
   end
 
-  priva
+  private
+  def set_artist
+    @artist = Artist.find(params[:id
