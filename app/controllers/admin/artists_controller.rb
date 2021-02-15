@@ -41,4 +41,8 @@ class Admin::ArtistsController < ApplicationController
 
   private
   def set_artist
-    @artist = Artist.find(params[:id
+    @artist = Artist.find(params[:id])
+  end
+
+  def artists_params
+    params.require(:artist).permit(:name ,
