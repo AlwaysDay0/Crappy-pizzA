@@ -1,1 +1,4 @@
-class Api::AlbumsC
+class Api::AlbumsController < ApplicationController
+
+  def index
+    render jso
