@@ -1,4 +1,8 @@
 class Api::AlbumsController < ApplicationController
 
   def index
-    render jso
+    render json: Album.all
+  end
+
+  def show
+    @album = Album.find(param
