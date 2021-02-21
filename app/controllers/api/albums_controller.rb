@@ -5,4 +5,6 @@ class Api::AlbumsController < ApplicationController
   end
 
   def show
-    @album = Album.find(param
+    @album = Album.find(params[:id])
+    if params[:resource]
+      render json: @album.send(params
