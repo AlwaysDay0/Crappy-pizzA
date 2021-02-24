@@ -9,4 +9,8 @@ class Api::AlbumsController < ApplicationController
     if params[:resource]
       render json: @album.send(params[:resource])
     else
-      render json: @album.as_json(exce
+      render json: @album.as_json(except: [:created_at, :updated_at])
+    end
+  end
+
+  def searc
