@@ -13,4 +13,7 @@ class Api::AlbumsController < ApplicationController
     end
   end
 
-  def searc
+  def search
+    @album = Album.search(params[:search])
+    if @album.empty?
+      render jso
