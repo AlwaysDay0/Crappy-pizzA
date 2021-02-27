@@ -18,4 +18,8 @@ class Api::AlbumsController < ApplicationController
     if @album.empty?
       render json: @album, status: :not_found
     else
-      render json: @album.as_js
+      render json: @album.as_json(except: [:id, :created_at, :updated_at])
+    end
+  end
+
+  rescue_from Ac
