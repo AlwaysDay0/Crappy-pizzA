@@ -22,4 +22,5 @@ class Api::AlbumsController < ApplicationController
     end
   end
 
-  rescue_from Ac
+  rescue_from ActiveRecord::RecordNotFound do |e|
+    render json: { message: e
