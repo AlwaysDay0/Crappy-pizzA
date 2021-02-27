@@ -16,4 +16,6 @@ class Api::AlbumsController < ApplicationController
   def search
     @album = Album.search(params[:search])
     if @album.empty?
-      render jso
+      render json: @album, status: :not_found
+    else
+      render json: @album.as_js
