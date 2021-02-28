@@ -5,4 +5,6 @@ class Api::SongsController < ApplicationController
   end
 
   def show 
-      @song =
+      @song = Song.find(params[:id])
+      if params[:resource]
+        rende
