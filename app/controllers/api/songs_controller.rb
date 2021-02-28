@@ -8,4 +8,5 @@ class Api::SongsController < ApplicationController
       @song = Song.find(params[:id])
       if params[:resource]
         render json: @song.send(params[:resource])
-      
+      else
+        render json: @song.as_json(except: [:created_at
