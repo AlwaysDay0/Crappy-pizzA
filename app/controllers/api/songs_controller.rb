@@ -7,4 +7,5 @@ class Api::SongsController < ApplicationController
   def show 
       @song = Song.find(params[:id])
       if params[:resource]
-        rende
+        render json: @song.send(params[:resource])
+      
