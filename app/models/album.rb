@@ -8,3 +8,9 @@ class Album < ApplicationRecord
 
   accepts_nested_attributes_for :songs
   accepts_nested_attributes_for :artists
+
+  def self.search(search_title)
+    self.where("title LIKE ?", "%#{search_title}%")
+  end
+  
+end
