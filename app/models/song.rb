@@ -5,4 +5,5 @@ class Song < ApplicationRecord
   validates :title, presence: true
   validates :duration, presence: false
   validates :rating, presence: false
-  va
+  validates :progress, presence: false
+  validate :pr
