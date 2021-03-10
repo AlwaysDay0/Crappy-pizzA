@@ -6,4 +6,6 @@ class Song < ApplicationRecord
   validates :duration, presence: false
   validates :rating, presence: false
   validates :progress, presence: false
-  validate :pr
+  validate :progress_must_less_than_duration
+  
+  # Requirement: The progress could not 
