@@ -9,4 +9,6 @@ class Song < ApplicationRecord
   validate :progress_must_less_than_duration
   
   # Requirement: The progress could not be bigger than the duration.
-  def progress_must_less_than
+  def progress_must_less_than_duration
+    if (self.progress > self.duration)
+     
