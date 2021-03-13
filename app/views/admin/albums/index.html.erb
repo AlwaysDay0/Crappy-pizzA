@@ -1,0 +1,25 @@
+
+<div>
+  <h2>List albums</h2>
+  <%= link_to 'New album', new_admin_album_path %>
+</div>
+<br>
+<div>
+  <% @albums.each do |album| %>
+    <div>
+      <h4><%= album.title %></h4>
+      <%= link_to '+ Add artist with song', add_record_admin_album_path(album), class: "small-text" %>
+      <ul>
+        <% album.songs.each do |song| %>
+          <li>
+            <%= song.title %> - 
+            <%= song.artists.map(&:name).join(", ") %></li>
+        <% end %>
+      </ul>
+      <div class="actions">
+        <%= link_to 'Edit', edit_admin_album_path(album) %>
+        <%= link_to 'Destroy', admin_album_path(album), method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+    </div>
+  <% end %>
+</div>
