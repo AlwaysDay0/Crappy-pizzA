@@ -11,4 +11,5 @@ class Song < ApplicationRecord
   # Requirement: The progress could not be bigger than the duration.
   def progress_must_less_than_duration
     if (self.progress > self.duration)
-     
+      errors.add(:progress, "progress must less than duration")
+    en
