@@ -1,0 +1,18 @@
+
+<%= form_for @album, url:  save_record_admin_album_path(@album) do |f| %>
+  <h2>Add song and artist to <%= @album.title %></h2>
+
+  <div class="field">
+    <%= f.label :song_ids, "Select Song:" %>
+    <%= f.collection_select :song_ids, Song.all, :id, :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :artist_ids, "Select Artist:" %>
+    <%= f.collection_select :artist_ids, Artist.all, :id, :name %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
