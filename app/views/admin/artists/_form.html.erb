@@ -1,2 +1,5 @@
 <%= form_for [:admin, @artist] do |f| %>
-  <% if a
+  <% if artist.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+    
