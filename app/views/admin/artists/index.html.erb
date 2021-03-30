@@ -18,4 +18,4 @@
           <td><%= artist.age %></td>
           <td>
             <%= link_to 'Edit', edit_admin_artist_path(artist) %>
-            <%= link_to 'Destroy'
+            <%= link_to 'Destroy', admin_artist_path(artist), method: :delete, data: { 
