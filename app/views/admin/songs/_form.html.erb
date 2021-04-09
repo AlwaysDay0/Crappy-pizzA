@@ -1,2 +1,5 @@
 <%= form_for [:admin, @song] do |f| %>
-  <% if song.errors.any? 
+  <% if song.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+        <% s
