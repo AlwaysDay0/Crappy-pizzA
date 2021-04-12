@@ -2,4 +2,5 @@
   <% if song.errors.any? %>
     <div id="error_explanation">
       <ul>
-        <% s
+        <% song.errors.full_messages.each do |message| %>
+          <li><%= mes
