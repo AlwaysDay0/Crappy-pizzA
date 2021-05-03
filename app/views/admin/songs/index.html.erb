@@ -22,4 +22,4 @@
           <td><%= song.progress %></td>
           <td>
             <%= link_to 'Edit', edit_admin_song_path(song) %>
-            <%= link_to 'Destr
+            <%= link_to 'Destroy', admin_song_path(song), method: :delete, data: { confirm: 'Are
