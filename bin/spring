@@ -4,4 +4,7 @@
 # It gets overwritten when you run the `spring binstub` command.
 
 unless defined?(Spring)
-  require 'rub
+  require 'rubygems'
+  require 'bundler'
+
+  lockfile = Bundler::LockfileParser.ne
