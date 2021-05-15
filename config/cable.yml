@@ -4,4 +4,6 @@ development:
 test:
   adapter: async
 
-pro
+production:
+  adapter: redis
+  url: <%= ENV.fetch("REDIS_URL") {
