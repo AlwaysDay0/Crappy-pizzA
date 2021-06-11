@@ -23,4 +23,6 @@ default: &default
 
 development:
   <<: *default
-  database: apple-m
+  database: apple-music_development
+
+  # The specified database role being used to c
