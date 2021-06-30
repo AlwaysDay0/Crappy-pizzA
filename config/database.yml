@@ -48,4 +48,6 @@ development:
 
   # Minimum log levels, in increasing order:
   #   debug5, debug4, debug3, debug2, debug1,
-  #   log, notice, warn
+  #   log, notice, warning, error, fatal, and panic
+  # Defaults to warning.
+  
