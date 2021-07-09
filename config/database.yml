@@ -60,4 +60,5 @@ test:
   database: apple-music_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
-# like your database password, in yo
+# like your database password, in your source code. If your source code is
+# ever seen by anyo
