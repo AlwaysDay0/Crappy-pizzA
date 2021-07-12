@@ -80,4 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: apple-
+  database: apple-music_production
+  username: apple-music
+  password: <%
