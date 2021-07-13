@@ -82,4 +82,4 @@ production:
   <<: *default
   database: apple-music_production
   username: apple-music
-  password: <%
+  password: <%= ENV['APPLE-MUSIC_DATABASE_PASSWORD'] %>
