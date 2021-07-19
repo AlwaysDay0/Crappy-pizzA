@@ -17,4 +17,6 @@ Rails.application.configure do
   if Rails.root.join('tmp', 'caching-dev.txt').exist?
     config.action_controller.perform_caching = true
 
-    con
+    config.cache_store = :memory_store
+    config.public_file_server.headers = {
+      'Cac
