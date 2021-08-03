@@ -45,4 +45,6 @@ Rails.application.configure do
   config.active_record.verbose_query_logs = true
 
   # Debug mode disables concatenation and preprocessing of assets.
-  # This option may cause significant delays in view rend
+  # This option may cause significant delays in view rendering with a large
+  # number of complex assets.
+  config
