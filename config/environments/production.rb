@@ -31,4 +31,4 @@ Rails.application.configure do
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
-  # Ena
+  # Enable serving of images, stylesheets, and JavaScripts from an as
