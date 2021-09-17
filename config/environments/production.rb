@@ -63,4 +63,6 @@ Rails.application.configure do
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "apple-music_#{Rails.env}"
 
-  config.action_mailer.perform_
+  config.action_mailer.perform_caching = false
+
+  # Ignore bad email addresses and do no
