@@ -16,4 +16,5 @@
 #   # policy.report_uri "/csp-violation-report-endpoint"
 # end
 
-# If you are using UJS t
+# If you are using UJS then enable automatic nonce generation
+# Rails.application.config
