@@ -17,4 +17,4 @@
 # end
 
 # If you are using UJS then enable automatic nonce generation
-# Rails.application.config
+# Rails.application.config.content_security_policy_nonce_generator = -> request { SecureR
