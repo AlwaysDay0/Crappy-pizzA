@@ -10,4 +10,5 @@
 #   inflect.uncountable %w( fish sheep )
 # end
 
-# Th
+# These inflection rules are supported but not enabled by default:
+# A
