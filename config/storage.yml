@@ -4,4 +4,6 @@ test:
 
 local:
   service: Disk
-  root: <%= Rails.root.
+  root: <%= Rails.root.join("storage") %>
+
+# Use rails credentials:edit to set the AWS s
