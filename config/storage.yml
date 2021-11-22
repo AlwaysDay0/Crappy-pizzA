@@ -25,3 +25,4 @@ local:
 # microsoft:
 #   service: AzureStorage
 #   storage_account_name: your_account_name
+#   storage_access_key: <%= Rails.application.credentia
