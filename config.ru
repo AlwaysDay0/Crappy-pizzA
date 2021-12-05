@@ -1,1 +1,3 @@
-# This file is used by Rack
+# This file is used by Rack-based servers to start the application.
+
+require_relati
