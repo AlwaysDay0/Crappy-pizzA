@@ -2,4 +2,6 @@ class CreateSongs < ActiveRecord::Migration[5.2]
   def change
     create_table :songs do |t|
       t.string :title
-      t.integer :d
+      t.integer :duration
+      t.integer :rating, default: 0
+      t.integer :
