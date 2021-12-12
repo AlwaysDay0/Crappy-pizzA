@@ -1,1 +1,3 @@
-class ChangeTitleTypeInAlbums < ActiveRecord::Migrat
+class ChangeTitleTypeInAlbums < ActiveRecord::Migration[5.2]
+  def change
+    change_column :albums, :title, :s
