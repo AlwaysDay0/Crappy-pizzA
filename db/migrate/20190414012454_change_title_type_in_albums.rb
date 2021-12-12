@@ -1,0 +1,1 @@
+class ChangeTitleTypeInAlbums < ActiveRecord::Migrat
