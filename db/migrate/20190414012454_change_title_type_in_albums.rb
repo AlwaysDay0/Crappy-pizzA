@@ -1,3 +1,5 @@
 class ChangeTitleTypeInAlbums < ActiveRecord::Migration[5.2]
   def change
-    change_column :albums, :title, :s
+    change_column :albums, :title, :string
+  end
+end
