@@ -4,4 +4,4 @@
 #
 # Note that this schema.rb definition is the authoritative source for your
 # database schema. If you need to create the application database on another
-# syste
+# system, you should be using db:schema:load, not running all th
