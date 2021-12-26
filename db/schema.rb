@@ -10,4 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_14_
+ActiveRecord::Schema.define(version: 2019_04_14_012454) do
+
+  # These are extensions that must be enabled i
