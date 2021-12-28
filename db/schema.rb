@@ -15,3 +15,5 @@ ActiveRecord::Schema.define(version: 2019_04_14_012454) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "albums", force: :cascade do |t|
+    t.s
