@@ -16,4 +16,6 @@ ActiveRecord::Schema.define(version: 2019_04_14_012454) do
   enable_extension "plpgsql"
 
   create_table "albums", force: :cascade do |t|
-    t.s
+    t.string "title"
+    t.integer "rating", default: 0
+    t.date
