@@ -18,4 +18,5 @@ ActiveRecord::Schema.define(version: 2019_04_14_012454) do
   create_table "albums", force: :cascade do |t|
     t.string "title"
     t.integer "rating", default: 0
-    t.date
+    t.datetime "created_at", null: false
+    t.datetime "updated_at
