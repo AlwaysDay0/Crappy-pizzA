@@ -19,4 +19,7 @@ ActiveRecord::Schema.define(version: 2019_04_14_012454) do
     t.string "title"
     t.integer "rating", default: 0
     t.datetime "created_at", null: false
-    t.datetime "updated_at
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "artists", for
