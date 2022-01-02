@@ -29,4 +29,6 @@ ActiveRecord::Schema.define(version: 2019_04_14_012454) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "assoc
+  create_table "associations", force: :cascade do |t|
+    t.bigint "album_id"
+    t.bigint "s
