@@ -26,4 +26,7 @@ ActiveRecord::Schema.define(version: 2019_04_14_012454) do
     t.string "name"
     t.string "age"
     t.datetime "created_at", null: false
-    t.datetime "
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "assoc
