@@ -22,4 +22,7 @@ ActiveRecord::Schema.define(version: 2019_04_14_012454) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "artists", for
+  create_table "artists", force: :cascade do |t|
+    t.string "name"
+    t.string "age"
+    t
