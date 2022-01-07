@@ -31,4 +31,6 @@ ActiveRecord::Schema.define(version: 2019_04_14_012454) do
 
   create_table "associations", force: :cascade do |t|
     t.bigint "album_id"
-    t.bigint "s
+    t.bigint "song_id"
+    t.bigint "artist_id"
+    t.index ["album_id"], na
