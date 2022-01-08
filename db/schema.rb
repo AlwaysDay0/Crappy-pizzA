@@ -35,4 +35,7 @@ ActiveRecord::Schema.define(version: 2019_04_14_012454) do
     t.bigint "artist_id"
     t.index ["album_id"], name: "index_associations_on_album_id"
     t.index ["artist_id"], name: "index_associations_on_artist_id"
-    t.i
+    t.index ["song_id"], name: "index_associations_on_song_id"
+  end
+
+  create_tabl
