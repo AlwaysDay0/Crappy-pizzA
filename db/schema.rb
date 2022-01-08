@@ -38,4 +38,6 @@ ActiveRecord::Schema.define(version: 2019_04_14_012454) do
     t.index ["song_id"], name: "index_associations_on_song_id"
   end
 
-  create_tabl
+  create_table "songs", force: :cascade do |t|
+    t.string "title"
+    t.i
