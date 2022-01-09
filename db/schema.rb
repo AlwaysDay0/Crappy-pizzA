@@ -40,4 +40,5 @@ ActiveRecord::Schema.define(version: 2019_04_14_012454) do
 
   create_table "songs", force: :cascade do |t|
     t.string "title"
-    t.i
+    t.integer "duration"
+    t.integer "rating", defau
