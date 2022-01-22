@@ -48,4 +48,5 @@ ActiveRecord::Schema.define(version: 2019_04_14_012454) do
   end
 
   add_foreign_key "associations", "albums"
-  add_foreign_
+  add_foreign_key "associations", "artists"
+  add_foreign_key "associatio
