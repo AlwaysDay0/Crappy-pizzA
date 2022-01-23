@@ -1,0 +1,1 @@
+artist1 = Artist.create(name: "Nujabes",
