@@ -5,4 +5,5 @@ artist4 = Artist.create(name: "Taylor Swift", age: "28")
 
 song1 = Song.create(title: "Imaginary Folklore", duration: "3:50", rating: 5, progress: 0)
 song2 = Song.create(title: "Space dream", duration: "4:50", rating: 5, progress: 0)
-song3 = Song.create(title: "
+song3 = Song.create(title: "Shake it off", duration: "3:50", rating: 5, progress: 0)
+song4 = Song.create(
