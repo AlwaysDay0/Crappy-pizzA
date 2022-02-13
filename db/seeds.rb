@@ -9,4 +9,7 @@ song3 = Song.create(title: "Shake it off", duration: "3:50", rating: 5, progress
 song4 = Song.create(title: "Felices los 4", duration: "3:50", rating: 5, progress: 0)
 
 album = Album.create(title: "Album Nujabes", rating: 3)
-album.
+album.songs << song1
+album.artists << artist1
+
+album2 = Album.c
