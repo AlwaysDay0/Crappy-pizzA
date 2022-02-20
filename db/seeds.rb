@@ -16,4 +16,6 @@ album2 = Album.create(title: "Album Sinatra", rating: 3)
 album2.songs << song2
 album2.artists << artist2
 
-album3 = Album.create(title: "Album Mal
+album3 = Album.create(title: "Album Maluma", rating: 3)
+album3.songs << song3
+album3.artists << arti
