@@ -8,4 +8,5 @@ if Rails.env.development?
     # same name.
     Annotate.set_defaults(
       'routes'                    => 'false',
-      'position_in_ro
+      'position_in_routes'        => 'before',
+      'position_in_class
