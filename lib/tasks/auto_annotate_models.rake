@@ -15,4 +15,6 @@ if Rails.env.development?
       'position_in_factory'       => 'before',
       'position_in_serializer'    => 'before',
       'show_foreign_keys'         => 'true',
-      'show_complete_foreign_keys' => '
+      'show_complete_foreign_keys' => 'false',
+      'show_indexes'              => 'true',
+   
