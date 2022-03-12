@@ -13,4 +13,5 @@ if Rails.env.development?
       'position_in_test'          => 'before',
       'position_in_fixture'       => 'before',
       'position_in_factory'       => 'before',
-      'pos
+      'position_in_serializer'    => 'before',
+      'show_foreign_keys'         => '
