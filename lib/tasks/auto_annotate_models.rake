@@ -10,4 +10,5 @@ if Rails.env.development?
       'routes'                    => 'false',
       'position_in_routes'        => 'before',
       'position_in_class'         => 'before',
-      'position_in_test'
+      'position_in_test'          => 'before',
+      'position_in_fixture'       => 'before',
