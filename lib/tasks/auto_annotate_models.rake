@@ -17,4 +17,5 @@ if Rails.env.development?
       'show_foreign_keys'         => 'true',
       'show_complete_foreign_keys' => 'false',
       'show_indexes'              => 'true',
-   
+      'simple_indexes'            => 'false',
+      'model_dir'              
