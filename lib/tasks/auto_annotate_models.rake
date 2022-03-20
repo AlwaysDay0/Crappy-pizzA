@@ -24,4 +24,5 @@ if Rails.env.development?
       'require'                   => '',
       'exclude_tests'             => 'false',
       'exclude_fixtures'          => 'false',
-      'exclude_
+      'exclude_factories'         => 'false',
+      'exclude_serializ
