@@ -28,4 +28,5 @@ if Rails.env.development?
       'exclude_serializers'       => 'false',
       'exclude_scaffolds'         => 'true',
       'exclude_controllers'       => 'true',
-      'exclud
+      'exclude_helpers'           => 'true',
+      'exclude_sti_subclasses' 
