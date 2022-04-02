@@ -34,4 +34,5 @@ if Rails.env.development?
       'ignore_columns'            => nil,
       'ignore_routes'             => nil,
       'ignore_unknown_models'     => 'false',
-      'hide_limit_column_types'   => 'integer
+      'hide_limit_column_types'   => 'integer,boolean',
+      'hide_default_column_types' => 'js
