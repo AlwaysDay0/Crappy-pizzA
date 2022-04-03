@@ -38,4 +38,5 @@ if Rails.env.development?
       'hide_default_column_types' => 'json,jsonb,hstore',
       'skip_on_db_migrate'        => 'false',
       'format_bare'               => 'true',
-      'format_rdoc'   
+      'format_rdoc'               => 'false',
+      'format_markdown'           => 'fal
