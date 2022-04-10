@@ -42,4 +42,5 @@ if Rails.env.development?
       'format_markdown'           => 'false',
       'sort'                      => 'false',
       'force'                     => 'false',
-      'classified_so
+      'classified_sort'           => 'true',
+      'trace'                    
