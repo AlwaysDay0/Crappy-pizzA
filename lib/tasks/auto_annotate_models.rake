@@ -41,4 +41,5 @@ if Rails.env.development?
       'format_rdoc'               => 'false',
       'format_markdown'           => 'false',
       'sort'                      => 'false',
-      'fo
+      'force'                     => 'false',
+      'classified_so
