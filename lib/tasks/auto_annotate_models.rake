@@ -43,4 +43,6 @@ if Rails.env.development?
       'sort'                      => 'false',
       'force'                     => 'false',
       'classified_sort'           => 'true',
-      'trace'                    
+      'trace'                     => 'false',
+      'wrapper_open'              => nil,
+      'w
