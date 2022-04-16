@@ -45,4 +45,5 @@ if Rails.env.development?
       'classified_sort'           => 'true',
       'trace'                     => 'false',
       'wrapper_open'              => nil,
-      'w
+      'wrapper_close'             => nil,
+      'with_comment
