@@ -26,3 +26,80 @@ RSpec.describe Api::AlbumsController, type: :controller do
   describe 'GET index' do
     it 'returns http status ok' do
       get :index
+      expect(response).to have_http_status(:ok)
+    end
+    it 'render json with all albums' do
+      get :index
+      albums = JSON.parse(response.body)
+      expect(albums.size).to eq 1
+    end
+    it 'returns http status ok when get one album data' do
+      get :index, params: {id: @album.id}
+      expect(response).to have_http_status(:ok)
+    end
+  end
+
+  # Album's detail
+  describe 'GET show' do
+    it 'returns http status ok' do
+      get :show, params: { id: @album }
+      expect(response).to have_http_status(:ok)
+    end
+    it 'render the correct album' do
+      get :show, params: { id: @album }
+      expected_album = JSON.parse(response.body)
+      expect(expected_album["id"]).to eq(@album.id)
+    end
+    it 'returns http status not found' do
+      get :show, params: { id: 'xxx' }
+      expect(response).to have_http_status(:not_found)
+    end
+  end
+
+  # Show artists for album
+  describe 'GET show artists for album' do
+    it 'returns http status ok' do
+      get :show, params: { 
+        id: @album.id,
+        resource: "artists"
+      }
+      expect(response).to have_http_status(:ok)
+    end
+    it 'render the correct album' do
+      get :show, params: { 
+        id: @album.id,
+        resource: "artists"
+      }
+      expected_album = JSON.parse(response.body)
+      expect(expected_album.size).to eq(1)
+    end
+    it 'returns http status not found' do
+      get :show, params: { 
+        id: 'xxx',
+        resource: "artists"
+      }
+      expect(response).to have_http_status(:not_found)
+    end
+  end
+
+  # Show songs for album
+  describe 'GET show songs for album' do
+    it 'returns http status ok' do
+      get :show, params: { 
+        id: @album.id,
+        resource: "songs"
+      }
+      expect(response).to have_http_status(:ok)
+    end
+    it 'render the correct album' do
+      get :show, params: { 
+        id: @album.id,
+        resource: "songs"
+      }
+      expected_album = JSON.parse(response.body)
+      expect(expected_album.size).to eq(1)
+    end
+    it 'returns http status not found' do
+      get :show, params: { 
+        id: 'xxx',
+        resource: "songs"
