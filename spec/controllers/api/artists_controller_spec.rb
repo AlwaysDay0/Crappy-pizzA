@@ -1,3 +1,7 @@
 require 'rails_helper'
 
-def createA
+def createArtist
+  Artist.create(name: "Nujabes", age: "31")
+end
+
+descr
