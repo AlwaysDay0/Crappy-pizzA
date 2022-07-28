@@ -6,4 +6,7 @@ end
 
 describe Api::ArtistsController do
   before do
-    Artist.delete_al
+    Artist.delete_all
+  end
+  describe 'GET index' do
+    it 'returns h
