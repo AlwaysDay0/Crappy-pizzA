@@ -9,4 +9,6 @@ describe Api::ArtistsController do
     Artist.delete_all
   end
   describe 'GET index' do
-    it 'returns h
+    it 'returns http status ok' do
+      get :index
+      expect(respo
