@@ -11,4 +11,6 @@ describe Api::ArtistsController do
   describe 'GET index' do
     it 'returns http status ok' do
       get :index
-      expect(respo
+      expect(response).to have_http_status(:ok)
+    end
+    it 'returns http
