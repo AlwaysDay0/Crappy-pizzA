@@ -13,4 +13,5 @@ describe Api::ArtistsController do
       get :index
       expect(response).to have_http_status(:ok)
     end
-    it 'returns http
+    it 'returns http status ok when get one movie data' do
+      artist = create
