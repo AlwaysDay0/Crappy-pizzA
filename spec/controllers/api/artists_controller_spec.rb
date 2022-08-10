@@ -18,4 +18,6 @@ describe Api::ArtistsController do
       get :index, params: {id: artist.id}
       expect(response).to have_http_status(:ok)
     end
-    it '
+    it 'render json with all artists' do
+      createArtist
+      get
