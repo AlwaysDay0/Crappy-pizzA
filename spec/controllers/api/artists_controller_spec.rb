@@ -25,4 +25,6 @@ describe Api::ArtistsController do
       expect(artists.size).to eq 1
     end
   end
-  de
+  describe 'GET show' do
+    it 'returns http status ok' do
+    
