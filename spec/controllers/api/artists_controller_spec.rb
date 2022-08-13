@@ -21,4 +21,8 @@ describe Api::ArtistsController do
     it 'render json with all artists' do
       createArtist
       get :index
-      artists = JSON.parse(response.b
+      artists = JSON.parse(response.body)
+      expect(artists.size).to eq 1
+    end
+  end
+  de
