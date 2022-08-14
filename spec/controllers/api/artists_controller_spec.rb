@@ -27,4 +27,5 @@ describe Api::ArtistsController do
   end
   describe 'GET show' do
     it 'returns http status ok' do
-    
+      artist = createArtist
+      get :show, params: { id: artist.id }
