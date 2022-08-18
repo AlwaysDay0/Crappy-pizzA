@@ -29,3 +29,6 @@ describe Api::ArtistsController do
     it 'returns http status ok' do
       artist = createArtist
       get :show, params: { id: artist.id }
+      expect(response).to have_http_status(:ok)
+    end
+  
