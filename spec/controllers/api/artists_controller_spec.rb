@@ -31,4 +31,6 @@ describe Api::ArtistsController do
       get :show, params: { id: artist.id }
       expect(response).to have_http_status(:ok)
     end
+    it 'render the correct user' do
+      artist = createArtist
   
