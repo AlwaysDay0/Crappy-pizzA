@@ -33,4 +33,5 @@ describe Api::ArtistsController do
     end
     it 'render the correct user' do
       artist = createArtist
-  
+      get :show, params: { id: artist.id }
+      expected_a
