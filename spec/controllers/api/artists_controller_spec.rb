@@ -34,4 +34,5 @@ describe Api::ArtistsController do
     it 'render the correct user' do
       artist = createArtist
       get :show, params: { id: artist.id }
-      expected_a
+      expected_artist = JSON.parse(response.body)
+      expect
