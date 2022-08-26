@@ -35,4 +35,6 @@ describe Api::ArtistsController do
       artist = createArtist
       get :show, params: { id: artist.id }
       expected_artist = JSON.parse(response.body)
-      expect
+      expect(expected_artist["id"]).to eq(artist.id)
+    end
+    it 'returns
