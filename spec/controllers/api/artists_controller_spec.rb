@@ -38,4 +38,7 @@ describe Api::ArtistsController do
       expect(expected_artist["id"]).to eq(artist.id)
     end
     it 'returns http status not found' do
-      get :show, params: { id: 'x
+      get :show, params: { id: 'x'}
+      expect(response).to have_http_status(:not_found)
+    end
+  end
