@@ -37,4 +37,5 @@ describe Api::ArtistsController do
       expected_artist = JSON.parse(response.body)
       expect(expected_artist["id"]).to eq(artist.id)
     end
-    it 'returns
+    it 'returns http status not found' do
+      get :show, params: { id: 'x
