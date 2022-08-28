@@ -42,3 +42,5 @@ describe Api::ArtistsController do
       expect(response).to have_http_status(:not_found)
     end
   end
+  describe 'GET search' do
+    it 'returns http stat
