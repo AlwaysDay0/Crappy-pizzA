@@ -43,4 +43,6 @@ describe Api::ArtistsController do
     end
   end
   describe 'GET search' do
-    it 'returns http stat
+    it 'returns http status ok' do
+      artist = createArtist
+      get :search, para
