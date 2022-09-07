@@ -49,4 +49,6 @@ describe Api::ArtistsController do
       expect(response).to have_http_status(:ok)
     end
     it 'returns list related to the search' do
-      cre
+      createArtist 
+      get :search, params: {search: 'uj'}
+  
