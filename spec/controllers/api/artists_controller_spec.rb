@@ -51,4 +51,5 @@ describe Api::ArtistsController do
     it 'returns list related to the search' do
       createArtist 
       get :search, params: {search: 'uj'}
-  
+      artists = JSON.parse(response.body)
+      expect(artists.count).t
