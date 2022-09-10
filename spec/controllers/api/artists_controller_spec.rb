@@ -52,4 +52,7 @@ describe Api::ArtistsController do
       createArtist 
       get :search, params: {search: 'uj'}
       artists = JSON.parse(response.body)
-      expect(artists.count).t
+      expect(artists.count).to eq 1
+    end
+    it 'returns http status not found' do
+      
