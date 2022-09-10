@@ -55,4 +55,5 @@ describe Api::ArtistsController do
       expect(artists.count).to eq 1
     end
     it 'returns http status not found' do
-      
+      get :search, params: { search: 'xxx' }
+      expect(response).to h
