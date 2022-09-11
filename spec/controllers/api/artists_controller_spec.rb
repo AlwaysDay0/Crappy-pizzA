@@ -56,4 +56,7 @@ describe Api::ArtistsController do
     end
     it 'returns http status not found' do
       get :search, params: { search: 'xxx' }
-      expect(response).to h
+      expect(response).to have_http_status(:not_found)
+    end
+  end
+end
