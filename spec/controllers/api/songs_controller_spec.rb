@@ -2,4 +2,6 @@ require 'rails_helper'
 
 describe Api::SongsController do
   before do
-    @song = Song.c
+    @song = Song.create(
+      title: "Song1",
+      duration
