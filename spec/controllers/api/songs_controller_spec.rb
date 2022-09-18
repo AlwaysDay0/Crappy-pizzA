@@ -10,3 +10,6 @@ describe Api::SongsController do
     )
   end
   
+  # GET /api/songs/
+  describe 'GET index' do
+    it 'r
