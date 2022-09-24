@@ -12,4 +12,6 @@ describe Api::SongsController do
   
   # GET /api/songs/
   describe 'GET index' do
-    it 'r
+    it 'returns http status ok' do
+      get :index
+      expect(res
