@@ -19,4 +19,6 @@ describe Api::SongsController do
     
     it 'render json with all songs' do
       get :index
-      songs = JSON
+      songs = JSON.parse(response.body)
+      expect(songs.size).to eq 1
+      expect(son
