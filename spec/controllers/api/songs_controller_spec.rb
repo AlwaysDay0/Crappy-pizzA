@@ -17,4 +17,6 @@ describe Api::SongsController do
       expect(response).to have_http_status(:ok)
     end
     
-    it 'render json
+    it 'render json with all songs' do
+      get :index
+      songs = JSON
