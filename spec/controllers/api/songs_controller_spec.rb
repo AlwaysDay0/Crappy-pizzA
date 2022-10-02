@@ -25,4 +25,6 @@ describe Api::SongsController do
     end
   end
   
-  # GET 
+  # GET /api/songs/:id
+  describe 'GET show' do
+    it 'returns htt
