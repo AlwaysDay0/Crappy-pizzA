@@ -27,4 +27,5 @@ describe Api::SongsController do
   
   # GET /api/songs/:id
   describe 'GET show' do
-    it 'returns htt
+    it 'returns http status ok' do
+      get :show, params: { id: @song
