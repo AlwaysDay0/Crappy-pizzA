@@ -32,4 +32,5 @@ describe Api::SongsController do
       expect(response).to have_http_status(:ok)
     end
 
-   
+    it 'render the correct @song' do
+        get :show, params: { i
