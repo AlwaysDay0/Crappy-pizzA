@@ -38,3 +38,6 @@ describe Api::SongsController do
         expect(expected_song["id"]).to eq(@song.id)
     end
   end
+
+  # GET /api/songs/:id/artists
+  describe 'GET arti
