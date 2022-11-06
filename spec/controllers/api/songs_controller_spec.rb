@@ -43,4 +43,7 @@ describe Api::SongsController do
   describe 'GET artists' do
     it 'returns http status ok' do
       get :artists, params: { song_id: @song }
-      expect(response).to
+      expect(response).to have_http_status(:ok)
+    end
+
+    it 'render the correc
