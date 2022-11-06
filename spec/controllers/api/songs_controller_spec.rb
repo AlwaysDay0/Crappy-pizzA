@@ -46,4 +46,5 @@ describe Api::SongsController do
       expect(response).to have_http_status(:ok)
     end
 
-    it 'render the correc
+    it 'render the correct artists' do
+        @song.artists << Artist.create(name: "MA
