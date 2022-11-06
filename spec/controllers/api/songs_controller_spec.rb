@@ -49,4 +49,5 @@ describe Api::SongsController do
     it 'render the correct artists' do
         @song.artists << Artist.create(name: "MAluma")
         get :artists, params: { song_id: @song }
-    
+        artists_list = JSON.parse(response.body)
+        expect(art
