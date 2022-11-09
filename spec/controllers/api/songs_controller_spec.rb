@@ -50,4 +50,8 @@ describe Api::SongsController do
         @song.artists << Artist.create(name: "MAluma")
         get :artists, params: { song_id: @song }
         artists_list = JSON.parse(response.body)
-        expect(art
+        expect(artists_list.size).to eq 1
+    end
+  end
+
+  # GET /api/songs/:i
