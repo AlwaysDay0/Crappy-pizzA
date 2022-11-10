@@ -56,4 +56,6 @@ describe Api::SongsController do
 
   # GET /api/songs/:id/albums
   describe 'GET albums' do
-    it 'returns http status
+    it 'returns http status ok' do
+      get :albums, params: { song_id: @song }
+      expect(res
