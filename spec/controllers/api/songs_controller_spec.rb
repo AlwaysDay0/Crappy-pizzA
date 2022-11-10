@@ -54,4 +54,6 @@ describe Api::SongsController do
     end
   end
 
-  # GET /api/songs/:i
+  # GET /api/songs/:id/albums
+  describe 'GET albums' do
+    it 'returns http status
