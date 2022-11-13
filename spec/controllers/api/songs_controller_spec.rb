@@ -58,4 +58,7 @@ describe Api::SongsController do
   describe 'GET albums' do
     it 'returns http status ok' do
       get :albums, params: { song_id: @song }
-      expect(res
+      expect(response).to have_http_status(:ok)
+    end
+
+    it 'render the co
