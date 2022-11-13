@@ -61,4 +61,5 @@ describe Api::SongsController do
       expect(response).to have_http_status(:ok)
     end
 
-    it 'render the co
+    it 'render the correct albums' do
+        @song.albums << Album.create(t
