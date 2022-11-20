@@ -62,4 +62,5 @@ describe Api::SongsController do
     end
 
     it 'render the correct albums' do
-        @song.albums << Album.create(t
+        @song.albums << Album.create(title: "Album1")
+        get :albums, params: { song_id: @son
