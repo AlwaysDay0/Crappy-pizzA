@@ -63,4 +63,6 @@ describe Api::SongsController do
 
     it 'render the correct albums' do
         @song.albums << Album.create(title: "Album1")
-        get :albums, params: { song_id: @son
+        get :albums, params: { song_id: @song }
+        albums_list = JSON.parse(response.body)
+        expect(albums
