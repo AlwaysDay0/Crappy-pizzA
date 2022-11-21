@@ -72,4 +72,7 @@ describe Api::SongsController do
   # GET /api/songs/search
   # (Completar)
 
-  #
+  # PATCH /api/songs/:id/progress
+  # (Completar)
+
+  # PATCH /api
