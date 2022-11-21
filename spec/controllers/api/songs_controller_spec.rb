@@ -65,4 +65,11 @@ describe Api::SongsController do
         @song.albums << Album.create(title: "Album1")
         get :albums, params: { song_id: @song }
         albums_list = JSON.parse(response.body)
-        expect(albums
+        expect(albums_list.size).to eq 1
+    end
+  end
+
+  # GET /api/songs/search
+  # (Completar)
+
+  #
