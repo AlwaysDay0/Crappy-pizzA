@@ -75,4 +75,6 @@ describe Api::SongsController do
   # PATCH /api/songs/:id/progress
   # (Completar)
 
-  # PATCH /api
+  # PATCH /api/songs/:id/rating
+  # (Arreglar)
+  # describe "PA
