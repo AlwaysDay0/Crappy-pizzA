@@ -79,4 +79,5 @@ describe Api::SongsController do
   # (Arreglar)
   # describe "PATCH update rating" do
   #   it "returns http status ok" do
-  #    
+  #     patch :rating, params: { 
+  #       id: @song,
