@@ -83,4 +83,7 @@ describe Api::SongsController do
   #       id: @song,
   #       rating: 1
   #     }
-  #     expect(response).to
+  #     expect(response).to have_http_status(:ok)
+  #   end
+
+  #   it "returns the updat
