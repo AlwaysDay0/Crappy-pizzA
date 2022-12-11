@@ -86,4 +86,6 @@ describe Api::SongsController do
   #     expect(response).to have_http_status(:ok)
   #   end
 
-  #   it "returns the updat
+  #   it "returns the updated @song" do
+  #     patch :rating, params: { 
+  #       
