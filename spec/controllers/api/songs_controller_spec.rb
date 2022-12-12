@@ -88,4 +88,7 @@ describe Api::SongsController do
 
   #   it "returns the updated @song" do
   #     patch :rating, params: { 
-  #       
+  #       id: @song,
+  #       rating: 1
+  #     }
+  #     expec
