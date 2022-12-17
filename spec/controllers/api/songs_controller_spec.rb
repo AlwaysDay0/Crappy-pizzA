@@ -92,4 +92,8 @@ describe Api::SongsController do
   #       rating: 1
   #     }
   #     expected_song = JSON.parse(response.body)
-  #     expect(expec
+  #     expect(expected_song["rating"]).to eq(1)
+  #   end
+  # end
+
+end
