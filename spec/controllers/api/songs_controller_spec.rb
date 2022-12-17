@@ -91,4 +91,5 @@ describe Api::SongsController do
   #       id: @song,
   #       rating: 1
   #     }
-  #     expec
+  #     expected_song = JSON.parse(response.body)
+  #     expect(expec
