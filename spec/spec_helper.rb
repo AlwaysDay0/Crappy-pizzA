@@ -4,4 +4,5 @@
 # this file to always be loaded, without a need to explicitly require it in any
 # files.
 #
-# Given that it is alwa
+# Given that it is always loaded, you are encouraged to keep this file as
+# light-weigh
