@@ -5,4 +5,4 @@
 # files.
 #
 # Given that it is always loaded, you are encouraged to keep this file as
-# light-weigh
+# light-weight as possible. Requiring heavyweight dependencies from 
