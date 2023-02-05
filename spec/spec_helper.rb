@@ -18,4 +18,5 @@ RSpec.configure do |config|
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
   config.expect_with :rspec do |expectations|
-    # This option will default to `true` in RSpec
+    # This option will default to `true` in RSpec 4. It makes the `description`
+    # and `failure_mes
