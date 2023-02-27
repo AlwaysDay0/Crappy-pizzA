@@ -37,4 +37,5 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 
-  # This option wil
+  # This option will default to `:apply_to_host_groups` in RSpec 4 (and will
+  # h
