@@ -54,4 +54,5 @@ RSpec.configure do |config|
   # metadata: `fit`, `fdescribe` and `fcontext`, respectively.
   config.filter_run_when_matching :focus
 
-  # Allows RSpec to persist some state between runs i
+  # Allows RSpec to persist some state between runs in order to support
+  # the `--only-failures` an
