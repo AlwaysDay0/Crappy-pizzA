@@ -61,4 +61,4 @@ RSpec.configure do |config|
 
   # Limits the available syntax to the non-monkey patched syntax that is
   # recommended. For more details, see:
-  #   - ht
+  #   - http://rspec.info/blog/2012/06/rspecs-new-expectation-synta
