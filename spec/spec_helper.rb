@@ -76,4 +76,5 @@ RSpec.configure do |config|
     config.default_formatter = "doc"
   end
 
-  # Print th
+  # Print the 10 slowest examples and example groups at the
+  # end o
