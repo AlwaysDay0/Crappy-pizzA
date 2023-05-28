@@ -87,4 +87,5 @@ RSpec.configure do |config|
   #     --seed 1234
   config.order = :random
 
-  # Seed global randomization
+  # Seed global randomization in this process using the `--seed` CLI option.
+  # Sett
